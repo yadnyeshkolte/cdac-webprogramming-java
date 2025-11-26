@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Do Registration Here</title>
+</head>
+<body>
+<form action="register" method="post">
+Id: <input type="text" name="id"><br><br>
+Name: <input type="text" name="name"><br><br>
+Email: <input type="text" name="email"><br><br>
+Gender:
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Female"> Female
+<input type="radio" name="gender" value="Others"> Others
+<br><br>
+Course: 
+<select name="course" size="4" required>
+    <option value="Java">Java</option>
+    <option value="Python">Python</option>
+    <option value="C++">C++</option>
+    <option value="Data">Data Science</option>
+</select>
+<br><br>
+<button type="submit" value="register">Register</button>
+</form>
+</body>
+</html>
