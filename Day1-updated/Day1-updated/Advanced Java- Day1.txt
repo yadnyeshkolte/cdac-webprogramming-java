@@ -1,0 +1,92 @@
+		Advanced Java- Day1
+
+j2EE
+
+jdbc
+servlet
+jsp
+
+----------------------------------------------------
+jdbc
+java data base connectivity API
+which helps us to connect java with data base
+
+Class
+Drivermanager
+
+connection
+statement
+preparedstatement
+callable statement
+ResultSet
+
+transaction
+commit
+rollback
+
+
+ORM
+
+save(e1)
+
+
+load the drivers
+get connection
+create query
+create statement
+execute the query
+iterate the resultset
+close the connection
+-----------------------------------------------------
+update
+delete
+insert
+
+preparedStatement
+- build a dynamic query
+
+select * from emp where empno = ?
+
+
+
+callable statement
+cs =con.prepareCall("{ call getEmpName(?,?)});
+cs.setInt(1,10)
+
+cs.registerOUtParameter(2,Types.VARCHAR);
+
+
+stored procedure
+
+delimiter //
+drop procedure getEmpName//
+create procedure getEmpName(in dno int,out v_ename varchar(20))
+begin
+
+select ename into v_ename from emp
+where sal =(select max(sal) from emp where deptno = dno group by deptno);
+end//
+
+call getEmpName(20,@cname)//
+select @cname//
+
+----------------------------------------
+
+delimiter //
+drop procedure getEmpdetails//
+create procedure getEmpdetails(in eno int)
+begin
+
+select * from emp 
+where empno = eno;
+end//
+call getEmpdetails(7369)//
+
+
+
+
+
+
+
+
+ 
