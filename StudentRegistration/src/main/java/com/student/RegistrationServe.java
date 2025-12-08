@@ -22,6 +22,9 @@ public class RegistrationServe extends HttpServlet {
 		out.println("<h1>"+email+"</h1>");
 		out.println("<h1>"+gender+"</h1>");
 		out.println("<h1>"+course+"</h1>");
+		
+		PrintWriter ui = res.getWriter();
+		
 
 		//res.sendRedirect("display.html");
 	}
