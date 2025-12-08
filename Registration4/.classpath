@@ -8,7 +8,20 @@
 	<classpathentry kind="src" path="src/main/java"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/Users/Yadnyesh Kolte/Documents/jars/jsp-api.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Yadnyesh Kolte/Documents/jars/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yadnyesh Kolte/Documents/jars/jsp-api.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Yadnyesh Kolte/Documents/jars/mysql-connector-j-9.5.0.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Yadnyesh Kolte/Documents/jars/servlet-api.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
