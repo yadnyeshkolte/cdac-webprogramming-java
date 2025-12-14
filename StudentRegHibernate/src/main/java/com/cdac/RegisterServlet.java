@@ -33,7 +33,5 @@ public class RegisterServlet extends HttpServlet
 					}
 				
 					 res.sendRedirect("success.jsp");
-                 
-        
     }
 }
